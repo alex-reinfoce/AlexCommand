@@ -8,17 +8,19 @@ const exec = ([cli, params]: [cli: string, params: string[]]) => {
   return spawn(cli, params, { stdio: "inherit" });
 };
 
+const { scripts } = JSON.parse(
+  await readFile(path.join(process.cwd(), "package.json"), "utf-8")
+);
+
 const commandAction = {
   i: () => exec(["ni", []]),
   s: async () => {
-    const { scripts } = JSON.parse(
-      await readFile(path.join(process.cwd(), "package.json"), "utf-8")
-    );
-
-    if (scripts.dev) {
+    if (scripts.start) {
+      return exec(["nr", ["start"]]);
+    } else if (scripts.dev) {
       return exec(["nr", ["dev"]]);
     } else {
-      return exec(["nr", ["start"]]);
+      throw new Error("no start or dev script");
     }
   },
   b: () => exec(["nr", ["build"]]),

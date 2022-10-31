@@ -1,6 +1,6 @@
 {
   "name": "alex-lichangnan-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "typescript script development of template",
   "main": "./dist/index.js",
   "bin": {
@@ -11,8 +11,7 @@
     "t": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "test": "test"
+    "build": "tsc"
   },
   "author": "alex",
   "license": "ISC",
