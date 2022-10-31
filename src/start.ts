@@ -2,7 +2,7 @@
 
 import path from "path";
 import { readFile } from "fs/promises";
-import { exec } from ".";
+import { exec } from "./index";
 
 (async () => {
   const { scripts } = JSON.parse(

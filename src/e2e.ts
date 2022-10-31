@@ -1,5 +1,5 @@
 #!/usr/bin/env node --experimental-specifier-resolution=node
 
-import { exec } from ".";
+import { exec } from "./index";
 
 exec(["nr", ["e2e"]]);

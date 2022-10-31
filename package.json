@@ -1,6 +1,6 @@
 {
   "name": "alex-lichangnan-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "typescript script development of template",
   "main": "./dist/index.js",
   "bin": {
@@ -22,6 +22,5 @@
   },
   "dependencies": {
     "@antfu/ni": "^0.18.2"
-  },
-  "type": "module"
+  }
 }
