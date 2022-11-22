@@ -2,7 +2,8 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "lib": [
-      "esnext"
+      "esnext",
+      "DOM"
     ],
     "module": "CommonJS",
     "preserveConstEnums": true,
