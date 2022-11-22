@@ -1,6 +1,12 @@
 # Alex 的私人专用命令行工具
 
-## Feature
+## 安装
+```shell
+npm run alex-dev-cli -g
+```
+
+
+## 使用
 
 ```shell
 i => 安装依赖
@@ -10,3 +16,4 @@ t => nr test
 s => nr start 或者 nr dev （优先运行 start）
 copen 仓库地址 => 克隆仓库后马上用 vscode 打开
 ```
+
