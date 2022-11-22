@@ -2,7 +2,7 @@
 
 ## 安装
 ```shell
-npm run alex-dev-cli -g
+npm install alex-dev-cli -g
 ```
 
 
