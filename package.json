@@ -1,7 +1,7 @@
 {
   "name": "alex-dev-cli",
   "version": "0.0.1",
-  "description": "typescript script development of template",
+  "description": "Alex's private cli tool for development",
   "main": "./dist/index.js",
   "bin": {
     "i": "./dist/install.js",
