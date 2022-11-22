@@ -1,6 +1,6 @@
 {
   "name": "alex-lichangnan-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "typescript script development of template",
   "main": "./dist/index.js",
   "bin": {
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "npm run build && onchange 'src/**/*.ts' -- npm run build",
-    "test": "vitest",
+    "test": "vitest run",
     "build": "tsc"
   },
   "author": "alex",

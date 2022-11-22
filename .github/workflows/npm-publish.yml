@@ -18,6 +18,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
+          npm run test
           npm run build
 
       - name: "Publish to the npm registry"
