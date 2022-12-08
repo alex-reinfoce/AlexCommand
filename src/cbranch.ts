@@ -1,12 +1,18 @@
 #!/usr/bin/env node
+import { exec } from ".";
 import { execCommand } from "./utils";
 
 /** 获取所有非当前的分支 */
-const getBranch = (str: string) => {
+const getBranch = async (str: string) => {
+  const currentBranch = (
+    await execCommand("git rev-parse --abbrev-ref HEAD")
+  ).replace("\n", "");
+
   const splited = str.split("\n");
+
   if (splited.length) {
     return splited
-      .filter((branch) => !branch.startsWith("*") && Boolean(branch))
+      .filter((branch) => !branch.endsWith(currentBranch) && Boolean(branch))
       .map((branch) => {
         let result = branch.trim().replace("\n", "");
 
@@ -21,13 +27,22 @@ const getBranch = (str: string) => {
   }
 };
 
+const removeDuplicate = (arr1: string[], arr2: string[]) => {
+  return arr1.filter((item) => !arr2.includes(item));
+};
+
 (async () => {
   const local = await execCommand("git branch");
-  const localBranchs = getBranch(local);
+  const localBranchs = await getBranch(local);
 
   const remote = await execCommand("git branch -r");
-  const remoteBranchs = getBranch(remote);
+  const remoteBranchs = await getBranch(remote);
 
-  console.log(localBranchs);
-  console.log(remoteBranchs);
+  const targetBranchs = removeDuplicate(localBranchs, remoteBranchs);
+
+  if (!targetBranchs.length) {
+    return console.log("暂无冗余分支😌");
+  }
+
+  exec(["git", ["branch -D", ...targetBranchs]]);
 })();
