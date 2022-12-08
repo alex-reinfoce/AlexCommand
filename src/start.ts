@@ -1,4 +1,4 @@
-#!/usr/bin/env node --experimental-specifier-resolution=node
+#!/usr/bin/env noderesolveRepoUrl
 
 import path from "path";
 import { readFile } from "fs/promises";
