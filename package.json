@@ -1,6 +1,6 @@
 {
   "name": "alex-dev-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Alex's private cli tool for development",
   "main": "./dist/index.js",
   "bin": {
@@ -9,7 +9,8 @@
     "b": "./dist/build.js",
     "e": "./dist/e2e.js",
     "t": "./dist/test.js",
-    "copen": "./dist/copen.js"
+    "copen": "./dist/copen.js",
+    "cbranch": "./dist/cbranch.js"
   },
   "scripts": {
     "start": "npm run build && onchange 'src/**/*.ts' -- npm run build",
