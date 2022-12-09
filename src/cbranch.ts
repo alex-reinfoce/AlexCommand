@@ -32,6 +32,8 @@ const removeDuplicate = (arr1: string[], arr2: string[]) => {
 };
 
 (async () => {
+  await execCommand("git remote prune origin");
+
   const local = await execCommand("git branch");
   const localBranchs = await getBranch(local);
 
