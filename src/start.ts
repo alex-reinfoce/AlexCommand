@@ -1,4 +1,4 @@
-#!/usr/bin/env noderesolveRepoUrl
+#!/usr/bin/env node
 
 import path from "path";
 import { readFile } from "fs/promises";
