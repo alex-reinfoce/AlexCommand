@@ -9,10 +9,10 @@ import { exec } from "./index";
     await readFile(path.join(process.cwd(), "package.json"), "utf-8")
   );
 
-  if (scripts.start) {
-    exec(["nr", ["start"]]);
-  } else if (scripts.dev) {
+  if (scripts.dev) {
     exec(["nr", ["dev"]]);
+  } else if (scripts.start) {
+    exec(["nr", ["start"]]);
   } else {
     throw new Error("no start or dev script");
   }
