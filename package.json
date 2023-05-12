@@ -1,6 +1,6 @@
 {
   "name": "alex-dev-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Alex's private cli tool for development",
   "main": "./dist/index.js",
   "bin": {
