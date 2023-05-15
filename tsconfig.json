@@ -1,22 +1,17 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "lib": [
-      "esnext",
-      "DOM"
-    ],
+    "lib": ["esnext", "DOM"],
     "module": "CommonJS",
     "preserveConstEnums": true,
     "moduleResolution": "node",
     "strict": true,
     "sourceMap": true,
     "target": "esnext",
-    "outDir": "dist"
+    "outDir": "dist",
+    "declaration": true,
+    "rootDir": "src"
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

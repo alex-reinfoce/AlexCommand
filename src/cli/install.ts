@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { exec } from "./index";
+import { exec } from "../index";
 
 exec(["ni", [""]]);
