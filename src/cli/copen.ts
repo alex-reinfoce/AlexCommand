@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { exec } from "./index";
-import { resolveRepoUrl } from "./utils";
+import { exec } from "../index";
+import { resolveRepoUrl } from "../utils";
 
 const [, , repo] = process.argv;
 

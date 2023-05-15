@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { exec } from ".";
-import { execCommand } from "./utils";
+import { exec } from "..";
+import { execCommand } from "../utils";
 
 /** 获取所有非当前的分支 */
 const getBranch = async (str: string) => {
