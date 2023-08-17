@@ -1,6 +1,6 @@
 {
   "name": "alex-dev-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Alex's private cli tool for development",
   "main": "./dist/index.js",
   "bin": {
@@ -30,6 +30,9 @@
     "vitest": "^0.25.2"
   },
   "dependencies": {
+    "@antfu/ni": "^0.18.2"
+  },
+  "peerDependencies": {
     "@antfu/ni": "^0.18.2"
   }
 }
