@@ -1,6 +1,6 @@
 {
   "name": "alex-dev-cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Alex's private cli tool for development",
   "main": "./dist/index.js",
   "bin": {
@@ -16,7 +16,8 @@
     "start": "npm run build && onchange 'src/**/*.ts' -- npm run build",
     "test": "vitest run",
     "build": "npm run test && tsc",
-    "generate": "ts-node ./src/main.ts"
+    "generate": "ts-node ./src/main.ts",
+    "postinstall": "npm install @antfu/ni -g"
   },
   "author": "alex",
   "license": "ISC",
@@ -30,9 +31,6 @@
     "vitest": "^0.25.2"
   },
   "dependencies": {
-    "@antfu/ni": "^0.18.2"
-  },
-  "peerDependencies": {
     "@antfu/ni": "^0.18.2"
   }
 }
