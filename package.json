@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "bin": {
     "i": "./dist/cli/install.js",
+    "p": "./dist/cli/publish.js",
     "s": "./dist/cli/start.js",
     "b": "./dist/cli/build.js",
     "e": "./dist/cli/e2e.js",
