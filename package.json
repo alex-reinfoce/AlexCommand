@@ -1,6 +1,6 @@
 {
   "name": "alex-dev-cli",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Alex's private cli tool for development",
   "main": "./dist/index.js",
   "bin": {
@@ -8,6 +8,7 @@
     "p": "./dist/cli/publish.js",
     "s": "./dist/cli/start.js",
     "b": "./dist/cli/build.js",
+    "sb": "./dist/cli/sb.js",
     "e": "./dist/cli/e2e.js",
     "t": "./dist/cli/test.js",
     "copen": "./dist/cli/copen.js",
