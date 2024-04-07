@@ -9,4 +9,5 @@ registerCommands([
   { name: "t", filename: "test.js" },
   { name: "copen", filename: "copen.js" },
   { name: "cbranch", filename: "cbranch.js" },
+  { name: "branch", filename: "branch.js" },
 ]);

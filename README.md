@@ -14,8 +14,8 @@ s => nr start 或者 nr dev （优先运行 dev）
 b => 打包
 e => nr e2e
 t => nr test
-p => npm publish --access publich
 copen 仓库地址 => 克隆仓库后马上用 vscode 打开
+branch => 显示每个本地分支名，同时显示
 cbranch => 清除所有远程仓库里不存在的本地分支
 ```
 
