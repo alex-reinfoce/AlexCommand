@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-import { execCommand } from "../utils";
+import { exec } from "..";
 
-(async () => {
-  await execCommand(
-    'git for-each-ref --sort=-committerdate refs/heads/ --format="[%(committerdate:iso8601)] %(refname:short)"'
-  );
-})();
+exec([
+  "git",
+  [
+    'git for-each-ref --sort=-committerdate refs/heads/ --format="[%(committerdate:iso8601)] %(refname:short)"',
+  ],
+]);
